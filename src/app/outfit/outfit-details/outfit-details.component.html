@@ -1,0 +1,27 @@
+<div class="details">
+  <nav class="details-nav">
+    <a class="details-link" routerLink="/catalog">&lt; BACK TO CATALOG</a>
+  </nav>
+  <div class="outfit">
+    <div class="outfit-name">{{outfit.name | uppercase}}</div>
+    <div class="outfit-details">
+      <img src="../../../assets/images/outfits/{{outfit.id}}.png" class="outfit-img">
+      <div class="outfit-info">
+        <div>{{outfit.price | currency:'EUR':'symbol':'1.2':'fr'}}</div>
+        <div  *ngIf="outfit.colors">
+        <span  class="outfit-color"
+               *ngFor="let color of outfit.colors"
+               [ngStyle]="{'background': color}"></span>
+        </div>
+        <div>{{outfit.volume}}</div>
+        <div>{{outfit.sizes}}</div>
+      </div>
+      <div class="outfit-agenda">
+        <span>PRICE</span>
+        <span *ngIf="outfit.colors">COLORS</span>
+        <span *ngIf="outfit.volume">VOLUME</span>
+        <span *ngIf="outfit.sizes">SIZES</span>
+      </div>
+    </div>
+  </div>
+</div>

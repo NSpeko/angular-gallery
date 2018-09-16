@@ -1,0 +1,62 @@
+.outfit {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.outfit-name {
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+.outfit-details {
+  display: flex;
+  justify-content: space-evenly;
+  height: 350px;
+  padding-top: 50px;
+  border: 5px solid #aa9b77;
+  font-size: 22px;
+}
+
+.outfit-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.outfit-agenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.outfit-img {
+  height: 300px;
+  align-self: flex-start;
+}
+
+.outfit-color {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 2px;
+  border-radius: 50%;
+}
+
+.details-nav {
+  padding: 45px 15px;
+  background: #f5f6f7;
+}
+
+.details-link {
+  color: #333333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.details-over {
+  color: #777;
+}

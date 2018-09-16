@@ -3,13 +3,21 @@ import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'gallery',
-    loadChildren: './gallery/gallery.module#GalleryModule'
+    path: '',
+    redirectTo: '/gallery',
+    pathMatch: 'full'
   },
   {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full'
+    path: 'gallery',
+    loadChildren: './gallery/gallery.module#GalleryModule',
+  },
+  {
+    path: 'outfit/details',
+    loadChildren: './outfit/outfit.module#OutfitModule'
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 
