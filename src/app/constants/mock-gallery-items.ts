@@ -7,21 +7,24 @@ export const CATALOG: OutfitsCategorised[] = [
       {
         id: 11,
         name: 't-shirt',
+        img: '../../assets/t-shirt-1.png',
         price: 5.00,
-        sizes: ['S', 'M', 'L'],
+        sizes: ['M', 'L', 'XL'],
         colors: ['red', 'green', 'black']
       },
       {
         id: 12,
         name: 'pants forclaz',
+        img: '../../assets/pants-1.png',
         price: 30.00,
-        sizes: ['40', '42', '44'],
+        sizes: ['M', 'L', 'XL'],
       },
       {
         id: 14,
-        name: 'bacpack 2',
-        price: 90.00,
-        volume: '20 litri'
+        name: 'bacpack',
+        img: '../../assets/bag-1.png',
+        price: 30.00,
+        volume: '10 litri'
       }
     ]
   },
@@ -30,15 +33,17 @@ export const CATALOG: OutfitsCategorised[] = [
     items: [
       {
         id: 22,
-        name: 'pants forclaz',
+        name: 'giacket',
+        img: '../../assets/jacket-1.png',
         price: 30.00,
-        sizes: ['40', '42', '44'],
+        sizes: ['M', 'L', 'XL'],
       },
       {
         id: 23,
-        name: 'bacpack',
+        name: 'trekking shoes',
+        img: '../../assets/boot-1.png',
         price: 60.00,
-        volume: '10 litri'
+        sizes: ['6', '7', '8'],
       }
     ]
   },
@@ -48,14 +53,16 @@ export const CATALOG: OutfitsCategorised[] = [
       {
         id: 33,
         name: 'bacpack',
+        img: '../../assets/bag-1.png',
         price: 60.00,
         volume: '10 litri'
       },
       {
         id: 34,
-        name: 'bacpack 2',
+        name: 't-shirt',
+        img: '../../assets/t-shirt-1.png',
         price: 90.00,
-        volume: '20 litri'
+        sizes: ['M', 'L', 'XL'],
       }
     ]
   },

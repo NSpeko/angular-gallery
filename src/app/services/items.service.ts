@@ -17,6 +17,7 @@ export class ItemsService {
   }
 
   getProduct(group: string, id: number): Observable<Outfit> {
+    console.log(CATALOG);
     return of(CATALOG.find(category => category.title === group).items.find(item => item.id === id));
   }
 }

@@ -18,6 +18,7 @@ export class OutfitDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getItem();
   }
 
   getItem(): void {

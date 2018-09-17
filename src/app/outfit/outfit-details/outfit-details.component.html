@@ -1,13 +1,13 @@
 <div class="details">
   <nav class="details-nav">
-    <a class="details-link" routerLink="/catalog">&lt; BACK TO CATALOG</a>
+    <a class="details-link" routerLink="/gallery">&lt; BACK TO GALLERY</a>
   </nav>
   <div class="outfit">
     <div class="outfit-name">{{outfit.name | uppercase}}</div>
     <div class="outfit-details">
-      <img src="../../../assets/images/outfits/{{outfit.id}}.png" class="outfit-img">
+      <img src="{{outfit.img}}" class="outfit-img">
       <div class="outfit-info">
-        <div>{{outfit.price | currency:'EUR':'symbol':'1.2':'fr'}}</div>
+        <div>{{outfit.price | currency:'EUR':'symbol':'1.2':'fr'}}<!--TODO: Add different locale if needed--></div>
         <div  *ngIf="outfit.colors">
         <span  class="outfit-color"
                *ngFor="let color of outfit.colors"

@@ -55,6 +55,7 @@
   color: #333333;
   text-decoration: none;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .details-over {
